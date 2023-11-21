@@ -1,5 +1,7 @@
 function Random(props) {
-  const number = Math.floor(Math.random() * props.max);
+  const number = Math.floor(
+    Math.random() * (props.max - props.min) + props.min
+  );
   const numberStyles = {
     border: "1px solid",
     marginRight: "200px",

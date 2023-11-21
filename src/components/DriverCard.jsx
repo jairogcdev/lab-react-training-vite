@@ -1,5 +1,4 @@
 function DriverCard(props) {
-  console.log(props);
   const number = Math.round(props.rating);
   const starRatingUp = "★".repeat(number);
   const starRatingDown = "☆".repeat(5 - number);
